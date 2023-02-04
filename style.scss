@@ -1,0 +1,649 @@
+*{
+    // font-family: sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: lighter;
+    color: white;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(45deg, rgb(2, 2, 95), rgb(77, 1, 77));
+}
+header{
+    border-bottom: 2px solid white;
+    padding: 15px;
+    display: flex;
+    justify-content: left;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    width: 97vw;
+    z-index: 999;
+
+    ul{
+        display: flex;
+        list-style: none;
+        padding: 0px;
+
+        li{
+            width: 120px;
+            text-align: center;
+            // display: flex;
+            // justify-content: center;
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+        }
+        div{
+            position: absolute;
+            border-bottom: white solid;
+            width: 0px;
+            // margin-left: 20px;
+            transition: all 0.5s ease-in-out;
+        }
+        a:hover ~ div{
+            width: inherit;
+        }
+
+
+    }
+
+    .cor{
+        position: absolute;
+        right: 3vw;
+        width: 25px;
+        cursor: pointer;
+    }
+
+    select{
+        position: absolute;
+        right: 8vw;
+        color: black;
+        font-size: 10px;
+
+        option{
+            color: black;
+            font-size: 10px;
+        }
+    }
+
+}
+
+section{
+    height: 100vh;
+    padding: 20px;
+    scroll-margin-top: 50px;
+}
+
+@keyframes move {
+    0%{margin-left: 500px;}
+    50%{margin-left: 00px;}
+    100%{margin-left: 40px;}
+}
+@keyframes sobe {
+    0%{padding-top: 100px;
+    opacity: 0;}
+    // 50%{padding-top: -100px;}
+    100%{padding-top: 0px;}
+}
+
+#home{
+    background-image: url(img/web-designer-and-programmer-free-vector.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0 0 0;
+    display: flex;
+    
+
+    .blur{
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(10px);
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        
+
+        h1{
+            margin: 35vh 0;
+            width: 50vw;
+            text-align: center;
+            
+            span{
+                text-decoration: underline;
+            }
+        }
+    
+        @keyframes perfil {
+            0%{background-position-y: 50px;}
+            50%{background-position-y: 70px;}
+            100%{background-position-y: 50px;}
+        }
+        @keyframes perfil-texto {
+            0%{margin-left: 200px;}
+            50%{margin-left: -100px;}
+            100%{margin-left: 0px;}
+        }
+        
+    
+        div{
+            float: right;
+            font-size: 10px;
+            text-align: center;
+            line-height: 13px;
+    
+            h4{
+                width: inherit;
+                margin-top: 50px;
+                animation: perfil-texto 1s ease-in-out;
+            }
+    
+            animation: perfil 1s ease-in-out infinite;
+            background-image: url(img/ReadyPlayerMe-Avatar\ \(1\).png);
+            background-repeat: no-repeat;
+            background-size: 500px;
+            // background-position-y: center;
+            
+        }
+    }
+}
+
+#problema{
+    display: flex;
+    flex-wrap: wrap;
+    
+    background-image: url(img/gif-4mb.gif);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+
+    h1{
+        width: 50vw;
+        text-align: center;
+        margin-top: 100px;
+        font-size: xx-large;
+        font-weight: bold;
+        color: black;
+        transition: all 0.5s;
+    }
+
+    img{
+        width: 40vw;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+#solucao{
+    display: flex;
+
+    background-image: url(img/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1{
+        width: 50vw;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    h1:nth-child(1){
+        margin-top: 100px;
+        margin-left: 0px;
+        // animation: sobe 1s ease-in-out;
+    }
+    h1:nth-child(2){
+        margin-top: 300px;
+        margin-right: 40px;
+        // animation: sobe 1s ease-in-out;
+    }
+    a:hover{
+        color: yellow;
+    }
+}
+
+#sobre{
+    position: relative;
+    background-image: url(img/ReadyPlayerMe-Avatar.png);
+    background-repeat: no-repeat;
+    // background-position: 50vw 20vh;
+    background-attachment: fixed;
+    background-position-x: 50vw;
+    background-position-y: bottom;
+    transition: all 1s;
+
+    h1{
+        font-size: 30px;
+        margin-left: 40px;
+        animation: move 1s ease-in-out;
+    }
+    ul{
+        margin-top: 20vh;
+    }
+    li{
+         font-size: 15px;
+        width: 50vw;
+        margin-left: 40px;
+        
+    }
+    li:nth-child(1){
+        animation: move 1.5s ease-in-out;
+    }
+    li:nth-child(2){
+        margin-top: 10px;
+        animation: move 1.9s ease-in-out;
+    }
+    li:nth-child(3){
+        margin-top: 10px;
+        animation: move 2.3s ease-in-out;
+    }
+    a:hover{
+        color: yellow;
+        transition: all 0.5s;
+    }
+}
+
+#hab{
+    display: flex;
+    background-image: url(img/ReadyPlayerMe-Avatar\ \(2\).png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: -6vw;
+    background-position-y: bottom;
+    height: fit-content;
+    
+    h1{
+        font-size: 30px;
+        margin-left: 40px;
+        position: absolute;
+        // animation: move 1s ease-in-out;
+        transition: all 1s;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0px 0px 50px;
+        
+        img{
+            object-fit: contain;
+            width: inherit;
+            height: 50px;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: all 0.5s;
+        }
+        img:hover{
+            scale: 1.1;
+            background-color: rgba(0, 0, 0, 0.507);
+
+        }
+    }
+
+    div:nth-of-type(1){
+        width: 300px;
+    }
+
+    div:nth-of-type(2){
+        display: flex;
+        justify-content: center;
+        height: 500px;
+        border-left: solid;
+
+        h1{
+            font-size: 20px;
+        }
+    }
+}
+
+#proj{
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/ReadyPlayerMe-Avatar\ \(3\).png);
+    background-repeat: no-repeat;
+    // background-position: 60vw 10vh;
+    background-attachment: fixed;
+    background-position-x: 50vw;
+    background-position-y: center;
+
+    h1{
+        font-size: 30px;
+        margin-left: 40px;
+        position: absolute;
+        // animation: move 1s ease-in-out;
+        transition: all 1s;
+    }
+
+    ul{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+
+        li{
+            width: 250px;
+            margin: 10px;
+            transition: all 0.5s;
+
+            p{
+                text-align: center;
+            }
+            img{
+                width: inherit;
+                height: 150px;
+                object-fit: contain;
+            }
+        }
+        li:hover{
+            scale: 1.1;
+            cursor: pointer;
+        }
+
+        @keyframes gira {
+            from{rotate: x 360deg;}
+            to{rotate: x 0deg;}
+        }
+
+        li:nth-of-type(1){
+            animation: gira 1s ease-in-out;
+        }
+        li:nth-of-type(2){
+            animation: gira 1.5s ease-in-out;
+        }
+        li:nth-of-type(3){
+            animation: gira 2s ease-in-out;
+        }
+        li:nth-of-type(4){
+            animation: gira 2.5s ease-in-out;
+        }
+    }
+
+    @keyframes apmodal {
+        0%{opacity: 0;
+            scale: 0.5;
+        }
+        50%{opacity: 1;
+            scale: 1.1;
+        }
+        100%{scale: 1;}
+    }
+
+    aside{
+        margin-top: 100px;
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        left: 35vw;
+        // margin: 0 auto;
+        // display: flex;
+        flex-direction: column;
+        align-items: center;
+        // overflow: hidden;
+        z-index: 999;
+        background-color: rgb(48, 0, 48);
+        display: none;
+
+        h1{
+            background-color: purple;
+            width: 380px;
+            margin: 0;
+            text-align: center;
+            position: static;
+            padding: 10px;
+            animation: none;
+            font-size: 20px;
+        }
+
+        h2{
+            position: absolute;
+            top: -13px;
+            right: -13px;
+            z-index: 999;
+            border-radius: 50%;
+            background-color: red;
+            padding: 5px;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+        h2:hover{
+            background-color: palevioletred;
+        }
+
+        a{
+            margin: 30px 0 0 0;
+            background-color: purple;
+            padding: 10px;
+            transition: all 0.5s;
+        }
+        a:hover{
+            background-color: rgb(175, 0, 175);
+            // filter: brightness(100);
+        }
+    }
+}
+
+#cont{
+    background-image: url(img/wave-bye.gif);
+    background-repeat: no-repeat;
+    // background-position: 15vw 20vh;
+    background-attachment: fixed;
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: 200px;
+
+    h1{
+        font-size: 20px;
+        margin-left: 40px;
+        position: absolute;
+        animation: move 1s ease-in-out;
+    }
+
+    div{
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    a{
+        margin: 0px auto;
+        text-decoration: none;
+        text-align: center;
+    }
+    img{
+        object-fit: contain;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@keyframes expande {
+    0%{scale: 0.5}
+    50%{scale: 1.3}
+    100%{scale: 1}
+}
+
+.menu{
+    display: none;
+    filter: invert(100);
+}
+
+@media (max-width: 800px) {
+    .menu{
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    header{
+        flex-direction: column;
+
+        ul{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
+            transition: all 0.5s;
+            z-index: -1;
+            width: 98vw;
+            position: absolute;
+            // top: -200px;
+            margin-top: -200px;
+            left: 0;
+            background-color: black;
+
+            li{
+                padding: 10px;
+            }
+        }
+
+        .cor{
+            right: 20vw;
+        }
+
+        select{
+            right: 30vw;
+        }
+    }
+
+    section{
+        height: auto;
+        scroll-margin-top: 0;
+    }
+
+    #home .blur{
+        flex-direction: column;
+        height: 900px;
+
+        h1{
+            margin: 50px auto;
+        }
+
+        div{
+            // animation: none;
+            height: 550px;
+            background-size: 400px 500px;
+            background-position-x: center;
+            background-position-y: bottom;
+
+            h4{
+                width: 90vw;
+                margin: 30px auto;
+            }
+        }
+        
+    }
+
+    #problema{
+        h1{
+            margin: 0 auto;
+        }
+    }
+
+    #solucao{
+        flex-direction: column;
+        align-items: center;
+        
+        h1{
+            margin: 50px !important;
+            
+        }
+    }
+
+    #hab{
+        div:nth-of-type(1){
+            padding: 0px;
+            margin: 100px 0 0 0;
+            width: 150px;
+        }
+    }
+
+    #proj{
+        ul{
+            margin: 60px 0 0 0;
+        }
+
+        aside{
+            left: 15vw;
+        }
+    }
+
+    #cont{
+        height: 70vh;
+    }
+}
+@media (max-width: 500px){
+
+    #sobre{
+        background-position-x: 30vw;
+        ul, li{
+            width: 80vw;
+            margin: 50px 0;
+        }
+    }
+ 
+    #problema{
+        h1{
+            width: 80vw;
+        }
+    }
+
+    #solucao{
+        h1{
+            width: 80vw;
+        }
+    }
+
+    #hab{
+        flex-direction: column;
+        background-position-x: 200px;
+
+        div:nth-of-type(1){
+            width: 90vw;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            img{
+                width: 100px;
+            }
+        }
+        div:nth-of-type(2){
+            margin: 0px;
+        }
+    }
+    #proj{
+        background-position-x: left;
+        background-position-y: bottom;
+
+        li{
+            width: 80vw !important;
+        }
+
+        aside{
+            left: 5px;
+            width: 90vw;
+
+            h1{
+                font-size: 5vw;
+            }
+            h2{
+                top: -40px;
+                right: 50vw;
+            }
+        }
+    }
+
+    #cont{
+        height: fit-content;
+        div{
+            margin-top: 180px;
+        }
+    }
+}

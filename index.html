@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MayckL-Portifolio</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body onload="hora()" onscroll="scroll()">
+    <header>
+        <img onclick="menu()" class="menu" src="img/menu-hamburguer.png" alt="">
+        <ul>
+            <li>
+                <a id="mostra" href="#home" onmousedown="fechamenu()">Home</a><div></div>
+            </li>
+            <li>
+                <a href="#sobre" onmousedown="fechamenu()">Sobre</a><div></div>
+            </li>
+            <li>
+                <a href="#hab" onmousedown="fechamenu()">Habilidade</a><div></div>
+            </li>
+            <li>
+                <a href="#proj" onmousedown="fechamenu()">Projetos</a><div></div>
+            </li>
+            <li>
+                <a href="#cont" onmousedown="fechamenu()">Contato</a><div></div>
+            </li>
+        </ul>
+
+        <img onclick="cor()" class="cor" src="img/sol.png" alt="">
+        <select name="" id="">
+            <option onclick="portugues()">Português</option>
+            <option onclick="ingles()">Inglês</option>
+        </select>
+    </header>
+
+    <section id="home">
+
+        <div class="blur">
+            <h1><span id="bomdia">Bom dia</span>, bem vindo ao meu portifólio</h1>
+            <div>
+                <h4>Mayck Luciano - level 20(anos) <br>
+                    Desenvolvedor Front-End <br>
+                    Estudante de Desenvolvimento de Sistemas 2° - Sem
+                </h4>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="problema">
+        <h1>Precisa de um site bonito e confiavel para mostrar seu produto ou seus serviços?</h1>
+    </section>
+    
+    <section id="solucao">
+        <h1>Me contratando farei um site bonito de alta converção,  responsivo (funcionando tanto em desktop quanto celular) e com interação com o usuario.</h1>
+        <h1>Veja alguns projetos meus <a href="#proj">abaixo</a> </h1>
+    </section>
+
+    <section id="sobre">
+        <h1>
+            Sobre mim:
+        </h1>
+        <ul>
+            <li>
+                Sou um desenvolvidor Front-End, comecei a estudar desenvolvimento Front-End ha 3 anos por conta propria. Atualmente estou cursando tecnico de desenvolvimento de sitemas na instituição Senai, 2° semestre.
+            </li>
+            <li>
+                Descubra mais do meu trabalho no meu <a href="https://www.linkedin.com/in/mayck-luciano-993403171" target="_blank">linkedin</a> e <a href="https://github.com/MayckL2" target="_blank">github</a>
+            </li>
+            <li>
+                Veja mais do meu portifólio abaixo
+            </li>
+        </ul>
+    </section>
+    
+    <section id="hab">
+        <h1>
+            Habilidades:
+        </h1>
+        <div>
+            <img onclick="hab(1)" src="img/html-5.png" alt="">
+            <img onclick="hab(2)" src="img/css-3.png" alt="">
+            <img onclick="hab(3)" src="img/sass.png" alt="">
+            <img onclick="hab(4)" src="img/js.png" alt="">
+            <img onclick="hab(5)" src="img/bootstrap.png" alt="">
+            <img onclick="hab(6)" src="img/jquery.png" alt="">
+            <img onclick="hab(7)" src="img/php.png" alt="">
+            <img onclick="hab(8)" src="img/python.png" alt="">
+        </div>
+        <div>
+            <h1 id="mostra-hab">clique em alguma das imagens ao lado</h1>
+        </div>
+    </section>
+
+    <section id="proj">
+        <h1>Projetos:</h1>
+
+        <aside id="modal">
+            <h2 onclick="fechamodal()">x</h2>
+            <h1 id="titulo-modal">titulo</h1>
+            <a id="reposi" href="" target="_blank">Repositorio (GitHub)</a>
+            <a id="site" href="" target="_blank">Site</a>
+        </aside>
+
+        <ul>
+            <li onclick="link(1)">
+                <img src="img/netflix-prototipo.netlify.app.png" alt="" >
+                <p id="texto-modal">Prototipo Netflix</p>
+            </li>
+            <li onclick="link(2)">
+                <img src="img/mayck-calculadora.netlify.app.png" alt="">
+                <p id="titulo-modal">Calculadora</p>
+            </li>
+            <li onclick="link(3)">
+                <img src="img/addcomments.netlify.app.png" alt="">
+                <p id="titulo-modal">Sessão de Comentarios</p>
+            </li>
+            <li onclick="link(4)">
+                <img src="img/landingpagejordan.netlify.app.png" alt="">
+                <p id="titulo-modal">landing page jordan</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="cont">
+        <h1>Entre em contato comigo para contratar meu serviços:</h1>
+        <div>
+            <a href="https://github.com/MayckL2" target="_blank">
+                <img src="img/github-sign.png" alt="">
+                <p>GITHUB</p>
+            </a>
+            <a href="https://www.linkedin.com/in/mayck-luciano-993403171" target="_blank">
+                <img src="img/linkedin.png" alt="">
+                <P>LINKEDIN</P>
+            </a>
+            <a href="https://www.workana.com/freelancer/9d43ccad6407beae6e807dc78f88818b" target="_blank">
+                <img src="img/Logo_Workana.png" alt="">
+                <P>WORKANA</P>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Made by Mayck L - 2023</p>  
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
